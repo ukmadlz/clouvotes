@@ -17,7 +17,17 @@ if (process.env.VCAPP_SERVCES) {
 var config = {}
 
 // Port
-config.port = vcapp || process.env.PORT;
+config.port = vcapServices.port || process.env.PORT;
+
+// Cloudant
+config.cloudant = {
+  username: vcapServices.cloudantNoSQLDB[0].credentials.username || process.env.CLOUDANT_USERNAME,
+  account: vcapServices.cloudantNoSQLDB[0].credentials.username || process.env.CLOUDANT_ACCOUNT,
+  password: vcapServices.cloudantNoSQLDB[0].credentials.password || process.env.CLOUDANT_PASSWORD
+}
+
+// Twilio
+config.twilio = {}
 
 // Export
 exports.config = config;
