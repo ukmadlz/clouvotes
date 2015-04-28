@@ -1,0 +1,23 @@
+{
+  "name": "clouvotes",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ukmadlz/clouvotes",
+  "authors": [
+    "Mike Elsmore <mike.elsmore@uk.ibm.com>"
+  ],
+  "description": "An SMS voting system using Cloudant",
+  "main": "app.js",
+  "license": "Apache 2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.3"
+  }
+}
